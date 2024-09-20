@@ -5,7 +5,15 @@ import Contacts from './contacts'
 
 const Home = () => (
 	<section className='home'>
-		<h1>Добро пожаловать на сайт "Железный Феликс"</h1>
+		<div className='mainText'>
+			<div>
+				<h1>Мы</h1>
+				<p>
+					Команда, на которую можно положиться:
+					<br /> создаем качество вместе!
+				</p>
+			</div>
+		</div>
 		<News />
 		<Calendar />
 		<Contacts />

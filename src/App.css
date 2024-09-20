@@ -1,19 +1,24 @@
-body {
-	font-family: Arial, sans-serif;
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: Arial, sans-serif;
+}
 
 header {
 	background-color: #fff;
-	padding: 20px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin: 0 345px 0 345px;
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid #126ab4;
 }
 
 .logo {
-	font-size: 24px;
-	font-weight: bold;
+	width: 375px;
+	height: 122px;
+	margin-bottom: 18px;
 }
 
 nav ul {
@@ -21,25 +26,69 @@ nav ul {
 	padding: 0;
 	display: flex;
 	justify-content: space-around;
+	margin-left: 60px;
+	margin-right: 107px;
+	gap: 118px;
 }
 
 nav a {
 	text-decoration: none;
-	color: #333;
+	color: #f83437;
 	font-weight: bold;
+	font-size: 24px;
 }
 
-.intro {
-	background: url('background.jpg') no-repeat center center/cover;
-	padding: 100px 0;
-	text-align: center;
-	color: white;
+.mainText {
+	background-image: url('../public/img/mainFon.png');
+	background-size: cover;
+	width: 100%;
+	height: 516px;
+	display: flex;
+	align-items: center;
+}
+
+.mainText div {
+	margin-left: 402px;
+}
+
+.mainText h1 {
+	font-size: 64px;
+	color: #f83437;
+}
+
+.mainText p {
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.titleNews {
+	margin-top: 60px;
+	margin-left: 405px;
+}
+
+.titleNews p {
+	font-size: 20px;
+	color: #0085ff;
 }
 
 .news-grid {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px;
+	gap: 37px;
+	margin: 0 303px;
+	margin-top: 49px;
+}
+
+.news-grid article .dateNew {
+	color: #747474;
+	font-size: 12px;
+	margin: 18px 0 0 24px;
+}
+.news-grid article .textNew {
+	margin-top: 18px;
+	font-size: 16px;
+	color: #747474;
+	line-height: 25px;
 }
 
 .news-grid article {
