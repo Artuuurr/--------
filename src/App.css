@@ -9,10 +9,12 @@ body {
 
 header {
 	background-color: #fff;
-	margin: 0 345px 0 345px;
+	margin: 0 345px;
+	width: 1230px;
 	display: flex;
 	align-items: center;
 	border-bottom: 3px solid #126ab4;
+	margin-bottom: 67px;
 }
 
 .logo {
@@ -66,7 +68,16 @@ nav a {
 	margin-left: 405px;
 }
 
-.titleNews p {
+.calendarTitel {
+	width: 1110px;
+	margin: 0 405px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.undertitle {
 	font-size: 20px;
 	color: #0085ff;
 }
@@ -93,12 +104,61 @@ nav a {
 
 .news-grid article {
 	flex: 1;
-	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #126ab4;
 }
 
 .contacts ul {
 	list-style: none;
 	padding: 0;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+}
+
+.contacts h2 {
+	font-size: 40px;
+	color: #f83437;
+	margin: 0 405px;
+	margin-top: 44px;
+	margin-bottom: 37px;
+	text-align: left;
+}
+
+.rowcontacts {
+	background-image: url('../public/img/ontactfon.png');
+	background-size: cover;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 405px;
+	padding-top: 101px;
+	padding-bottom: 100px;
+	color: #ffffff;
+	font-size: 24px;
+	margin-bottom: 124px;
+}
+
+.row1,
+.row2 {
+	width: 45%;
+}
+
+.row1 p,
+.row2 p,
+.row2 ul {
+	margin: 10px 0;
+}
+
+.contacts ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contacts ul li {
+	margin: 5px 0;
 }
 
 footer {
@@ -134,11 +194,12 @@ footer {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	padding: 20px;
+	margin: 0 397px;
 }
 
 .order-card {
 	flex: 1 1 30%;
-	background-color: #f8f8f8;
+	background-color: #e8e8e8;
 	margin: 10px;
 	padding: 20px;
 	border-radius: 10px;
@@ -154,7 +215,7 @@ footer {
 
 .order-card h3 {
 	margin: 15px 0;
-	font-size: 18px;
+	font-size: 15px;
 }
 
 .order-card p {
@@ -244,15 +305,60 @@ footer {
 }
 
 .modal-content {
-	background: white;
+	background: #126ab4;
 	padding: 20px;
-	border-radius: 8px;
 	width: 400px;
 	max-width: 90%;
+	width: 1230px;
+	height: 602px;
+	display: flex;
+	align-items: center;
+	padding-left: 94px;
+}
+
+.windModal {
+	background: #ffffff;
+	border-radius: 63px;
+	width: 431px;
+	height: 518px;
+	padding: 82px 64px 0 63px;
+	text-align: center;
+}
+
+.windModal button {
+	width: 100%;
+	height: 56px;
+	border-radius: 64px;
+	font-size: 20px;
+	background-color: #f83437;
 }
 
 .form-group {
 	margin-bottom: 15px;
+}
+
+.titlemodal {
+	color: #f83437;
+	font-size: 24px;
+	margin-bottom: 47px;
+}
+
+.form-group input {
+	border: 1px solid #f83437;
+	border-radius: 64px;
+	padding: 5px 0 0 15px;
+	width: 304px;
+	height: 56px;
+}
+
+.form-group input::placeholder {
+	font-size: 20px;
+}
+
+.foggot {
+	color: #838282;
+	padding-top: 8px;
+	margin-bottom: 18px;
 }
 
 input {
@@ -282,5 +388,77 @@ button.close-modal:hover {
 }
 
 button:hover {
-	background-color: #0056b3;
+	background-color: #6c000bc9;
+}
+
+.fc {
+	font-family: 'Arial, sans-serif';
+	width: 1110px;
+	margin: 0 405px;
+}
+
+.fc th {
+	text-align: left;
+	color: #969696;
+	text-transform: uppercase;
+}
+
+.fc-daygrid-day {
+	background-color: #ffffff; /* Задайте фон для дней */
+}
+
+.fc-daygrid-day:hover {
+	background-color: #e0e0e0; /* Цвет при наведении */
+}
+
+.fc-event {
+	background-color: #007bff;
+	color: #969696;
+}
+
+.fc .fc-daygrid-day-top {
+	flex-direction: row;
+	font-size: 21px;
+	color: #969696;
+}
+
+.fc-toolbar {
+	color: #0085ff;
+	font-size: 20px;
+}
+
+.fc-h-event .fc-event-title-container {
+	margin: 10px 10px 4px 12px;
+	font-size: 14px;
+}
+
+.add-event-btn {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	z-index: 10;
+	background-color: #e8e8e8;
+	color: #585757;
+	border: none;
+	padding: 3px 5px;
+	font-size: 14px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.add-event-btn:hover {
+	background-color: #b6b6b6;
+	color: #7e7d7d;
+}
+
+.modalBtn {
+	background-color: #2c3e50;
+}
+
+.FullCalendar {
+	z-index: 1;
+}
+
+a {
+	cursor: pointer;
 }

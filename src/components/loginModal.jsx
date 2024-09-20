@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import login from '../../public/img/login.png'
 
 const LoginModal = ({ showModal, handleClose }) => {
 	const [email, setEmail] = useState('')
@@ -16,33 +17,38 @@ const LoginModal = ({ showModal, handleClose }) => {
 	return (
 		<div className='modal-overlay' onClick={handleClose}>
 			<div className='modal-content' onClick={e => e.stopPropagation()}>
-				<h2>Авторизация</h2>
-				<form onSubmit={handleSubmit}>
-					<div className='form-group'>
-						<label htmlFor='email'>Email</label>
-						<input
-							type='email'
-							id='email'
-							value={email}
-							onChange={e => setEmail(e.target.value)}
-							required
-						/>
-					</div>
-					<div className='form-group'>
-						<label htmlFor='password'>Пароль</label>
-						<input
-							type='password'
-							id='password'
-							value={password}
-							onChange={e => setPassword(e.target.value)}
-							required
-						/>
-					</div>
-					<button type='submit'>Войти</button>
-				</form>
-				<button className='close-modal' onClick={handleClose}>
-					Закрыть
-				</button>
+				<div className='windModal'>
+					<h2 className='titlemodal'>Вход в аккаунт</h2>
+					<form onSubmit={handleSubmit}>
+						<div className='form-group'>
+							<input
+								placeholder='Email'
+								type='email'
+								id='email'
+								value={email}
+								onChange={e => setEmail(e.target.value)}
+								required
+							/>
+						</div>
+						<div className='form-group'>
+							<input
+								placeholder='Пароль'
+								type='password'
+								id='password'
+								value={password}
+								onChange={e => setPassword(e.target.value)}
+								required
+							/>
+						</div>
+						<p className='foggot'>
+							<a>Забыл пароль?</a>
+						</p>
+						<button type='submit'>Войти</button>
+					</form>
+				</div>
+				<div className='imgModal'>
+					<img src={login} alt='Дверь' />
+				</div>
 			</div>
 		</div>
 	)

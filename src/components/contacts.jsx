@@ -3,13 +3,20 @@ import React from 'react'
 const Contacts = () => (
 	<section className='contacts'>
 		<h2>Контактная информация</h2>
-		<p>Телефон: +7 987 321-43-42</p>
-		<p>Email: example@domain.com</p>
-		<p>Социальные сети:</p>
-		<ul>
-			<li>VK: @company</li>
-			<li>WhatsApp: +7 123 456-78-90</li>
-		</ul>
+		<div className='rowcontacts'>
+			<div className='row1'>
+				<p>Телефон: +7 987 321-43-42</p>
+				<p>Email: oren458008@gmail.com</p>
+				<p>Email: oren458008@gmail.com</p>
+			</div>
+			<div className='row2'>
+				<p>Наши социальные сети:</p>
+				<ul>
+					<li>- WhatsApp: +7 987 795-80-08</li>
+					<li>- ВКонтакте: @ironorenfelix </li>
+				</ul>
+			</div>
+		</div>
 	</section>
 )
 

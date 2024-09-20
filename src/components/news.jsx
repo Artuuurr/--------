@@ -38,7 +38,7 @@ const News = () => {
 		<section className='news'>
 			<div className='titleNews'>
 				<h2 style={{ fontSize: '40px', color: '#f83437' }}>Новости</h2>
-				<p>{today}</p>
+				<p className='undertitle'>{today}</p>
 			</div>
 			<div className='news-grid'>
 				{newsData.map((news, index) => (
