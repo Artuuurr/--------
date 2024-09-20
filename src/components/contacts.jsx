@@ -7,7 +7,7 @@ const Contacts = () => (
 			<div className='row1'>
 				<p>Телефон: +7 987 321-43-42</p>
 				<p>Email: oren458008@gmail.com</p>
-				<p>Email: oren458008@gmail.com</p>
+				<p>Сервисная служба: 45-96-48</p>
 			</div>
 			<div className='row2'>
 				<p>Наши социальные сети:</p>

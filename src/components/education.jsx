@@ -1,4 +1,6 @@
 import React from 'react'
+import sert from '../../public/img/sert.png'
+import feedIcon from '../../public/img/feedIcon.png'
 
 const Education = () => (
 	<section className='education'>
@@ -11,33 +13,50 @@ const Education = () => (
 			</p>
 		</div>
 
-		<div className='course-categories'>
-			<h2>Категории курсов:</h2>
-			<div className='categories-buttons'>
-				<button>Технологии производства</button>
-				<button>Современные материалы</button>
-				<button>Устойчивое производство</button>
-				<button>Дизайн и эстетика дверей</button>
+		<div className='course'>
+			<div className='course-categories'>
+				<h2>Категории курсов:</h2>
+				<div className='categories-buttons'>
+					<button>Технологии производства</button>
+					<button>Современные материалы</button>
+					<button>Устойчивое производство</button>
+					<button>Дизайн и эстетика дверей</button>
+				</div>
 			</div>
+			<div className='courseImg'></div>
 		</div>
 
 		<div className='certificate-info'>
-			<h3>
-				По окончании каждого курса участники получают сертификаты,
-				подтверждающие квалификацию
-			</h3>
-			<img src='certificate.jpg' alt='Сертификат' />
+			<div className='certificate'>
+				<h3>
+					По окончании каждого курса участники
+					<br /> получают сертификаты, подтверждающие
+					<br /> их квалификацию и повышение
+					<br /> профессиональных навыков.
+				</h3>
+				<img src={sert} alt='Сертификат' />
+			</div>
 		</div>
 
 		<div className='feedback-section'>
+			<div className='rating'></div>
 			<h4>Оцените наши курсы по повышению квалификации</h4>
 			<div className='feedback-card'>
-				<p>Курс: Устойчивое производство</p>
-				<div className='rating'>⭐⭐⭐⭐⭐</div>
+				<button>к курсам</button>
 				<p>
-					Этот курс помог мне значительно улучшить мои знания и навыки в области
-					производства дверей!
+					Данный блок повышения квалификации позволит сотрудникам
+					производственных предприятий не только усовершенствовать свои навыки,
+					но и быть в курсе современных технологий и тенденций в производстве
+					дверей.
 				</p>
+			</div>
+			<div className='flex'>
+				<div>
+					<p>1 день</p>
+				</div>
+				<div className='flex2'>
+					<img src={feedIcon} alt='icon' /> <p>12</p>
+				</div>
 			</div>
 		</div>
 	</section>
